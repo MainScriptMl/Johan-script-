@@ -60,6 +60,7 @@ local buttonNames = {
     "Activar pegar muerto",
     "Auto Kill a todos",
     "Auto Kill a jugadores",
+    "Auto Reset",
     "Espectear"
 }
 
@@ -374,6 +375,17 @@ buttons["Espectear"].MouseButton1Click:Connect(function()
     end
 end)
 
+buttons["Auto Reset"].MouseButton1Click:Connect(function()
+    local url = "https://raw.githubusercontent.com/MainScriptMl/Auto-reinciar-personaje/refs/heads/main/Auto%20reinicio"
+    local success, response = pcall(function()
+        return game:HttpGet(url)
+    end)
+    if success and response then
+        loadstring(response)()
+    else
+        warn("Error cargando script 'Activar pegar muerto'")
+    end
+end)
 
 buttons["Activar pegar muerto"].MouseButton1Click:Connect(function()
     local url = "https://raw.githubusercontent.com/PheonixHub/Pegar-Muerto-Johan-/refs/heads/main/Johan"
