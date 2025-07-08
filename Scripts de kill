@@ -387,7 +387,7 @@ buttons["Auto Reset"].MouseButton1Click:Connect(function()
     end
 end)
 
-buttons["Activar pegar muerto"].MouseButton1Click:Connect(function()
+buttons["Actvar pegar muerto"].MouseButton1Click:Connect(function()
     local url = "https://raw.githubusercontent.com/PheonixHub/Pegar-Muerto-Johan-/refs/heads/main/Johan"
     local success, response = pcall(function()
         return game:HttpGet(url)
