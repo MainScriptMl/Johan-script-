@@ -57,11 +57,7 @@ buttonContainer.Parent = mainFrame
 
 -- Botones
 local buttonNames = {
-    "Activar pegar muerto",
-    "Auto Kill a todos",
-    "Auto Kill a jugadores",
-    "Auto Reset",
-    "Espectear"
+    "
 }
 
 local yPosition = 20
